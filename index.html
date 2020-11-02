@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>  
+    <title>Assignment 1</title>   
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">    
+    <!--  https://fonts.google.com/specimen/Noto+Sans?sidebar.open=true&selection.family=Noto+Sans -->
+    <link rel="stylesheet" href="css/asg1.css">
+    
+</head>
+<body>
+    
+    <main class="container">
+  <div class="box a">
+      <section>
+          <h2>COMP 3512 Assign1</h2>  
+          <h1>Liam Cornwall</h1>
+      </section>  
+  </div>
+  <div class="box b"> 
+      <section>
+        <h2>Galleries</h2>
+          <!-- https://loading.io/css/ Used for animation -->
+        <div class="lds-ellipsis" id="loader1"><div></div><div></div><div></div><div></div></div>
+        <ul id="galleryList"></ul>  
+          <!-- https://www.pinterest.ca/pin/699254279618889323/ Used for minimize image -->
+        <img src="images/minimize.png" alt="exit" id="exit">
+      </section>  	
+  </div>
+  <div class="box c">
+    <section>
+        <h2>Gallery Info</h2>  
+        <div class="lds-ellipsis" id="loader2"><div></div><div></div><div></div></div>
+        <h2 id="galleryName"></h2>
+          <label>Native Name:</label>
+          <span id="galleryNative"></span><br>          
+          <label>City:</label>
+          <span id="galleryCity"></span><br>      
+          <label>Address:</label>
+          <span id="galleryAddress"></span><br>  
+          <label>Country:</label>
+          <span id="galleryCountry"></span><br>         
+          <label>Website:</label>
+          <span><a href="" id="galleryHome"></a></span>
+    </section>  
+  </div>
+        <div class="box d" id="map"></div>
+        <div class="box e">
+            <section>
+            <h2>Paintings</h2>
+            <table id="defaultTable">
+            <tr>
+                <th>Painting</th>
+                <th id="artist">Artist</th>
+                <th id="title">Title</th> 
+                <th id="year">Year</th>
+            </tr>
+                </table>
+                <table id="paintingTable">
+                </table>
+      </section> </div>
+        <div class="box f" id="single">
+            <section>
+                <h1></h1>
+                <label></label>
+          <span id="a"></span><br>          
+          <label></label>
+          <span id="b"></span><br>      
+          <label></label>
+          <span id="c"></span><br> 
+                <label></label>
+            
+            <div><button id="myBtn">Close</button></div></section>
+            <div id="Modal">
+
+
+            <div class="modal-content">
+                <img>
+            <span class="close">&times;</span>
+  </div>
+</div>
+            
+        </div>
+</main>
+    
+    
+    
+    
+    
+<script src="js/asg1.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB30hM21SjjcF5pBFQhh780mn72K_GBJ6w&callback=initMap" async defer></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+html {
+    
+    background: linear-gradient(to bottom, #14213D 50%, #000000 100%);
+    background-repeat:no-repeat;
+}
+
+body {
+    margin: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+h2 {
+    
+    text-align: center;
+}
+.container {
+  display: grid;
+  grid-gap: 10px;
+    color: #ffffff;
+  grid-template-columns: 1fr 1fr 1fr 1fr
+
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.box {
+  background-color: #28292A;
+  font-size: 100%;
+    border: 5px solid #000000;
+    position: relative;
+    border-radius: 20px;
+}
+.a {
+  grid-column: 2 / span 2;
+    grid-row: 1;
+    margin:auto;
+    width: 50%;
+    text-align: center;
+    border: 10px solid #000000;
+    background-color:#66818F;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #000;
+}
+.b {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+      padding: 20px;
+    height: 850px;
+}
+.c {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+      padding: 20px;
+}
+.d {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+      padding: 20px;
+    height: 400px;
+}
+.e {
+    grid-column: 3 / span 4;
+  grid-row: 2 / span 4;
+      padding: 20px;
+
+}
+
+.f {
+    grid-column: 1 / span 4;
+  grid-row: 4;
+      padding: 100px;
+    height: 800px;
+}
+
+
+ul#galleryList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    display:block;
+}
+ul#galleryList li {
+    margin-bottom: 0.25rem;
+    cursor: pointer;
+}
+
+#exit {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 3px;
+
+}
+
+#exit:hover {
+    opacity: .5;
+    filter: brightness(50%);
+}
+
+ul#galleryList li:hover {
+    opacity: .5;
+    filter: brightness(50%);
+
+}
+
+#artist:hover {
+    opacity: .5;
+    filter: brightness(50%);
+}
+
+#title:hover {
+    opacity: .5;
+    filter: brightness(50%);
+}
+
+#year:hover {
+    opacity: .5;
+    filter: brightness(50%);
+}
+
+td:nth-child(3):hover {
+    opacity: .5;
+    filter: brightness(50%);
+    
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+th, td {
+    width: 150px;
+    text-align: center;
+    
+}
